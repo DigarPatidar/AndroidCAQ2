@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffcc00"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".qu2ca2">
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Rate The Lessons"
+        android:textColor="#cc0000"
+        android:textSize="30dp"
+        android:gravity="center"></TextView>
+
+    <EditText
+        android:id="@+id/edtxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:minHeight="30dp"
+        android:textColor="#cc0000"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/edtxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxt1"
+        android:hint="Enter Subject"
+        android:inputType="textCapCharacters"
+        android:minHeight="30dp"
+        android:textColor="#cc0000"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/edtxt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxt2"
+        android:hint="Enter Chapter Name"
+        android:inputType="text"
+        android:minHeight="30dp"
+        android:textColor="#cc0000"
+        android:textSize="20dp"></EditText>
+
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxt3"
+        android:layout_marginTop="10dp"
+        android:text="Choose according to understanding of lesson"
+        android:textColor="#cc0000"
+        android:textSize="20dp"></TextView>
+
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end">
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"
+            android:textColor="#cc0000"
+            android:textSize="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textColor="#cc0000"
+            android:textSize="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Okay"
+            android:textColor="#cc0000"
+            android:textSize="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdbtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor"
+            android:textColor="#cc0000"
+            android:textSize="15dp"></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdgrp"
+        android:layout_marginTop="10dp"
+        android:text="Give Your Few Suggestions here"
+        android:textColor="#cc0000"
+        android:textSize="20dp"></TextView>
+
+    <CheckBox
+        android:id="@+id/chkbx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview1"
+        android:layout_marginTop="6dp"
+        android:text="I really enjoy this lesson."
+        android:textColor="#cc0000"
+        android:textSize="15dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/chkbx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkbx1"
+        android:layout_marginTop="6dp"
+        android:text="I would like to know more deep in this lesson."
+        android:textColor="#cc0000"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/chkbx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkbx2"
+        android:layout_marginTop="6dp"
+        android:text="I am satisfied with content and full description."
+        android:textColor="#cc0000"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/chkbx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkbx3"
+        android:layout_marginTop="6dp"
+        android:text="I will prefer this lesson to else also."
+        android:textColor="#cc0000"></CheckBox>
+
+
+
+    <Button
+        android:id="@+id/sbtbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkbx4"
+        android:layout_marginTop="22dp"
+        android:text="SUBMIT"
+        android:textColor="#cc0000"></Button>
+
+
+</RelativeLayout>
